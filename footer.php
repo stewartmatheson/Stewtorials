@@ -1,7 +1,9 @@
 
     </div>
     <footer>
-    Stewtorials &copy; <?php echo date('Y'); ?> <a href="http://rtmatheson.com">Stewart Matheson</a>.
+    Stewtorials &copy; <?php echo date('Y'); ?> <a href="http://rtmatheson.com">Stewart Matheson</a> 
+    | <a href="https://github.com/stewartmatheson/Stewtorials">Source Code</a>
+    | This site has been created with the awesome <a href="http://html5boilerplate.com">HTML5 Boiler Plate</a>
     </footer>
   </div> <!--! end of #container -->
 
