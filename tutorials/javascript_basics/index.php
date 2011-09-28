@@ -37,73 +37,70 @@
 
 <p>Functions can also be declared as first level variables. This allows us to define a function and then assign it to a variable. This functionality is in contrast to languages such as PHP and C. A function to put it like this creates a new variable. This variable as type of function. In the first exercise this type was not mentioned.</p>
 
-<<functions assigned to a variable>>
+<?php render_code_block('javascript', "first_level_functions.js", "A first level function in javascript"); ?>
 
-Functions that are defined in this way are known as anonymous functions. Anonymous functions are used extensively in JavaScript libraries and frameworks. Anonymous functions make it very easy to define programming interfaces. We can even write our own for each loop using an anonymous function. In the example below we define a function that loops through an array. The function accepts a function as its first parameter. Each time the array loops the function that is passed in is executed. Other languages such as PHP and Java perform very similar operations internally. JavaScript itself doesn’t have a for each loop, this is because they are so easy to write given the language constructs.
+<p>Functions that are defined in this way are known as anonymous functions. Anonymous functions are used extensively in JavaScript libraries and frameworks. Anonymous functions make it very easy to define programming interfaces. We can even write our own for each loop using an anonymous function. In the example below we define a function that loops through an array. The function accepts a function as its first parameter. Each time the array loops the function that is passed in is executed. Other languages such as PHP and Java perform very similar operations internally. JavaScript itself doesn’t have a for each loop, this is because they are so easy to write given the language constructs.</p>
 
-<<our own foreach loop example>>
+<?php render_code_block('javascript', "own_for_each.js", "A for each loop in javascript"); ?>
 
-Having first-class functions is a massive advantage. We can have an array of options that we need to execute, or we can pass functions to other functions. Being able to work with functions in this way allows us to create very descriptive code that is both easy to write and easy to maintain. Creating functions in this way also allows us to asssign functions to object properties simulating the behaviour of an object in classically object orientated languages such as Java and C++.
+<p>Having first-class functions is a massive advantage. We can have an array of options that we need to execute, or we can pass functions to other functions. Being able to work with functions in this way allows us to create very descriptive code that is both easy to write and easy to maintain. Creating functions in this way also allows us to asssign functions to object properties simulating the behaviour of an object in classically object orientated languages such as Java and C++.</p>
 
-<< functions assigned to an object >>
-Objects
-As mentioned in a previous section JavaScript is a prototypical language that does not support classes. JavaScript does however have objects. Objects in JavaScript are very flexible and provide an excellent way of working with JavaScript code. Objects can be thought of a map of data and functions in much the same way a class is though of. An object exists in JavaScript is a single variable. An object can then be assigned various properties which include both data and functions.
 
-<<example calling an object property>>
+<h3>Objects</h3>
+<p>As mentioned in a previous section JavaScript is a prototypical language that does not support classes. JavaScript does however have objects. Objects in JavaScript are very flexible and provide an excellent way of working with JavaScript code. Objects can be thought of a map of data and functions in much the same way a class is though of. An object exists in JavaScript is a single variable. An object can then be assigned various properties which include both data and functions.</p>
 
-As JavaScript is a weekly type language we can set our object properties to be anything kind of variable we like. This includes functions.
+<?php render_code_block('javascript', "objects_and_proprties.js", "Objects and Properties"); ?>
 
-<<example and object with functions>>
+<p>As JavaScript is a weekly typed language we can set our object properties to be anything kind of variable we like. This includes functions.</p>
 
-We can also mix the two having both data and functions as the property of an object.
+<?php render_code_block('javascript', "objects_and_functions.js", "Objects and Functions"); ?>
 
-<<example mixed>>
+<p>We can also mix the two having both data and functions as the property of an object.  This as powerful as it allows us to simulate classes within JavaScript. A common pattern to use is the constructor function pattern. Constructive functions are simply a first-class function in JavaScript that creates an object. The object is assigned properties that contain and carry out particular operations relating to the object.</p>
 
-This as powerful as it allows us to simulate classes within JavaScript. A common pattern to use is the constructor function pattern. Constructive functions are simply a first-class function in JavaScript that creates an object. The object is assigned properties that contain and carry out particular operations relating to the object.
-
-<< person object constructor function example>>
+<?php render_code_block('javascript', "object_constructor.js", "Object constructor"); ?>
 
 Objects can also be sent over the network using JavaScript object notation. JSON encoding is now supported by many server side scripting languages including PHP. JSON can be constructed as a string with a server side scripting language such as PHP. It can then be interpreted by JavaScript as a runtime object and its properties can be accessed as such.
 
-<<JSON example>>
-Arrays
-Arrays in JavaScript work much the same way as a race in other languages. Arrays in JavaScript a zero indexed so the first element in the array is accessed with an index of zero.
+<h3>Arrays</h3>
+<p>Arrays in JavaScript work much the same way as a race in other languages. Arrays in JavaScript a zero indexed so the first element in the array is accessed with an index of zero.</p>
 
-<<creating arrays and referencing arrays example>>
-Conditions and control structures
-JavaScript supports conditional statements and control structures in much the same way Java and PHP do. JavaScript adopts these control structures from C.
+<?php render_code_block('javascript', "creating_arrays.js", "Creating Arrays"); ?>
 
-If statements support if’s else if’s and else’s.
+<h3>Conditions and control structures</h3>
+<p>JavaScript supports conditional statements and control structures in much the same way Java and PHP do. JavaScript adopts these control structures from C.</p>
 
-<< if else elseif exmaple>>
+<p>If statements support if’s else if’s and else’s.</p>
 
-JavaScript also supports for loops. For loops in JavaScript are set up in the same way they are in C style languages. As is the case with other languages when constructing for loop we must first know how many times we intend to loop. To use this amount to set up the guard condition of the loop.
+<?php render_code_block('javascript', "if_else.js", "If's in Javascript"); ?>
+
+<p>JavaScript also supports for loops. For loops in JavaScript are set up in the same way they are in C style languages. As is the case with other languages when constructing for loop we must first know how many times we intend to loop. To use this amount to set up the guard condition of the loop.</p>
 
 <<for loop example>>
 
-JavaScript also supports while loops. A while loop as a single guard condition. While this guard condition is said to true a while continue. The loop will continue until the guard condition is set to false.
+<p>JavaScript also supports while loops. A while loop as a single guard condition. While this guard condition is said to true a while continue. The loop will continue until the guard condition is set to false.</p>
 
 <<while loop example>>
 
-JavaScript also has a for in loop. This loop will loop each property of a given object. Useful if we have an object with functions that we wish to call.
+<p>JavaScript also has a for in loop. This loop will loop each property of a given object. Useful if we have an object with functions that we wish to call.</p>
 
 <<for in example>>
-Scope
-A common issue that is reported by new JavaScript developers is that of scope. Scope refers to the lexical context of a program at a particular point of its run-time. As JavaScript is not a class-based language scope behaviour is different and it must properly understood will cause frustration. Again, much of this frustration will be felt by users of C++ and Java as they are classically object orientated languages.
 
-Scope essentially boils down to what data you can access at what time. For example data in one function cannot be accessed from a different function.
+<h3>Scope</h3>
+<p>A common issue that is reported by new JavaScript developers is that of scope. Scope refers to the lexical context of a program at a particular point of its run-time. As JavaScript is not a class-based language scope behaviour is different and it must properly understood will cause frustration. Again, much of this frustration will be felt by users of C++ and Java as they are classically object orientated languages.</p>
+
+<p>Scope essentially boils down to what data you can access at what time. For example data in one function cannot be accessed from a different function.</p>
 
 << two separate functions with their own scope example>>
 
-Variables that are created outside a function accessible from inside a function.
+<p>Variables that are created outside a function accessible from inside a function.</p>
 
 <<after variable be accessed by a function>>
 
-Any variables that we create inside a function are destroyed as soon as we leave the function.
+<p>Any variables that we create inside a function are destroyed as soon as we leave the function.</p>
 
 <<function scope example>>
 
-when we are writing code outside any kind of function we are writing code in the global scope. Writing code in the global scope is potentially dangerous. As JavaScript is totally dynamic it is possible to reassign variables that have already been created. It’s also possible to reassign built-in variables. At any time we can redefine built-in variables in JavaScript. We can delete the built-in array and replace it with a one implementation. The reason this feature was built into JavaScript is most likely to to JavaScript is short development time. The language was created in a matter of weeks. The language designer anticipated problems when the language was launched. Therefore the decision was made to make every part of JavaScript dynamic. This would allow users to fix any problems in the language after the language was released. While this decision facilitated JavaScript framework and library developers are made JavaScript development potentially dangerous. Whenever we are working in the global scope we must consider what variables we are creating if we create a variable with the same name as a built-in variable there will be no error report by JavaScript. It will allow this code to run and “clobber” the existing variable.
+<p>When we are writing code outside any kind of function we are writing code in the global scope. Writing code in the global scope is potentially dangerous. As JavaScript is totally dynamic it is possible to reassign variables that have already been created. It’s also possible to reassign built-in variables. At any time we can redefine built-in variables in JavaScript. We can delete the built-in array and replace it with a one implementation. The reason this feature was built into JavaScript is most likely to to JavaScript is short development time. The language was created in a matter of weeks. The language designer anticipated problems when the language was launched. Therefore the decision was made to make every part of JavaScript dynamic. This would allow users to fix any problems in the language after the language was released. While this decision facilitated JavaScript framework and library developers are made JavaScript development potentially dangerous. Whenever we are working in the global scope we must consider what variables we are creating if we create a variable with the same name as a built-in variable there will be no error report by JavaScript. It will allow this code to run and “clobber” the existing variable.</p>
 
 <<example global scope clobbering>>
 

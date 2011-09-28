@@ -15,6 +15,11 @@
   <!-- scripts concatenated and minified via ant build script-->
   <script defer src="/js/plugins.js"></script>
   <script defer src="/js/mylibs/header.js"></script>
+  
+  <?php if(!is_index_page()): ?>
+  <script defer src="/js/mylibs/toc.js"></script>
+  <?php endif; ?>
+  
   <script defer src="/js/script.js"></script>
   <!-- end scripts-->
 

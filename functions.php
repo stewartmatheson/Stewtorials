@@ -14,3 +14,7 @@ function render_code_block($type, $file, $title = "") {
         $rendered_title = '<div class="code_block_title"> ' . $title . ' </div>';
     echo $rendered_title . '<div class="code_block">' . $rendered_code . '</div>';
 }
+
+function is_index_page(){
+    return $_SERVER['REQUEST_URI'] == '/';
+}
