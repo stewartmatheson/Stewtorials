@@ -202,7 +202,12 @@ h5 {
     padding:0px;
 }
 
-
+#back_to_top {
+  position: absolute;
+  display:none;
+  margin:30px 10px 10px 10px;
+  width:120px;
+}
 
 
 /* ==|== non-semantic helper classes ======================================== */

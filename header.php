@@ -23,6 +23,11 @@
 
 <body>
 
+
+  <?php if(!is_index_page()): ?>
+    <div id="back_to_top"><a href="#">[&#8593;] Back to Top</a></div>
+  <?php endif; ?>
+
   <div id="container">
     <header>
         <div id="inner_header_container">
