@@ -90,19 +90,13 @@ Objects can also be sent over the network using JavaScript object notation. JSON
 
 <p>Scope essentially boils down to what data you can access at what time. For example data in one function cannot be accessed from a different function.</p>
 
-<< two separate functions with their own scope example>>
+<?php render_code_block('javascript', "function_scope.js", "Function Scope"); ?>
 
-<p>Variables that are created outside a function accessible from inside a function.</p>
-
-<<after variable be accessed by a function>>
-
-<p>Any variables that we create inside a function are destroyed as soon as we leave the function.</p>
-
-<<function scope example>>
+<p>Variables that are created outside a function accessible from inside a function.  Any variables that we create inside a function are destroyed as soon as we leave the function.</p>
 
 <p>When we are writing code outside any kind of function we are writing code in the global scope. Writing code in the global scope is potentially dangerous. As JavaScript is totally dynamic it is possible to reassign variables that have already been created. It’s also possible to reassign built-in variables. At any time we can redefine built-in variables in JavaScript. We can delete the built-in array and replace it with a one implementation. The reason this feature was built into JavaScript is most likely to to JavaScript is short development time. The language was created in a matter of weeks. The language designer anticipated problems when the language was launched. Therefore the decision was made to make every part of JavaScript dynamic. This would allow users to fix any problems in the language after the language was released. While this decision facilitated JavaScript framework and library developers are made JavaScript development potentially dangerous. Whenever we are working in the global scope we must consider what variables we are creating if we create a variable with the same name as a built-in variable there will be no error report by JavaScript. It will allow this code to run and “clobber” the existing variable.</p>
 
-<<example global scope clobbering>>
+<?php render_code_block('javascript', "scope_clobber.js", "Scope clobbering"); ?>
 
 <<Execise: Call built in functions>>
 <<Execise: Define a user function>>

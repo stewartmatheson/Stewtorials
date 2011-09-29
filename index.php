@@ -5,10 +5,14 @@
 <h3>Javascript</h3>
 <ul class="toc">
     <li>
-        <a href="tutorials/javascript_introduction">What becomes of the Javascripted?</a> An introductory guide to javascript and a short history of the language.
+        <a href="tutorials/javascript_introduction">What becomes of the Javascripted?</a> An introductory guide to javascript.
     </li>
     <li>
-        <a href="tutorials/javascript_basics">Gone with the Javascript</a> Writing Javascript, using the DOM and jQuery.
+        <a href="tutorials/javascript_basics">Gone with the Javascript</a> Arrays, scope and loops.
+    </li>
+    
+    <li>
+        <a href="tutorials/javascript_and_dom">J2: Javascriptment Day</a> Writing Javascript, using the DOM and jQuery.
     </li>
 </ul>
 
