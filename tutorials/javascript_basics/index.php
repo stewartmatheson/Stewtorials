@@ -75,15 +75,15 @@ Objects can also be sent over the network using JavaScript object notation. JSON
 
 <p>JavaScript also supports for loops. For loops in JavaScript are set up in the same way they are in C style languages. As is the case with other languages when constructing for loop we must first know how many times we intend to loop. To use this amount to set up the guard condition of the loop.</p>
 
-<<for loop example>>
+<?php render_code_block('javascript', "for_loops.js", "For's in Javascript"); ?>
 
-<p>JavaScript also supports while loops. A while loop as a single guard condition. While this guard condition is said to true a while continue. The loop will continue until the guard condition is set to false.</p>
+<p>JavaScript also supports while loops. A while loop as a single guard condition. While this guard condition is said to true a while continue. The loop will continue until the guard condition is set to false. Make sure you are chanigng the guard condition when looping as you can get stuck in loop.</p>
 
-<<while loop example>>
+<?php render_code_block('javascript', "while.js", "While loop"); ?>
 
-<p>JavaScript also has a for in loop. This loop will loop each property of a given object. Useful if we have an object with functions that we wish to call.</p>
+<p>JavaScript has a for in loop. This loop will loop each property of a given object. Useful if we have an object with functions that we wish to call.</p>
 
-<<for in example>>
+<?php render_code_block('javascript', "for_in.js", "For in loop"); ?>
 
 <h3>Scope</h3>
 <p>A common issue that is reported by new JavaScript developers is that of scope. Scope refers to the lexical context of a program at a particular point of its run-time. As JavaScript is not a class-based language scope behaviour is different and it must properly understood will cause frustration. Again, much of this frustration will be felt by users of C++ and Java as they are classically object orientated languages.</p>
@@ -110,4 +110,5 @@ Objects can also be sent over the network using JavaScript object notation. JSON
 <<Execise: Create an array and loop it>>
 <<Execise: Set up an if statement>>
 
+<?php include '../../disqus.php'; ?>
 <?php include "../../footer.php"; ?>

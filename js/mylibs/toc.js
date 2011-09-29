@@ -12,7 +12,7 @@
   };
   moveFloatingWindowToRight = function() {
     var leftValue;
-    leftValue = $(window).width() - floating_window.width();
+    leftValue = $(window).width() - floating_window.width() - 10;
     return floating_window.css('left', leftValue.toString() + "px");
   };
   $(function() {
@@ -21,7 +21,7 @@
     moveFloatingWindowToRight();
     $(window).scroll(function() {
       var top;
-      top = $(this).scrollTop() + 20;
+      top = $(this).scrollTop();
       floating_window.css('top', top.toString() + 'px');
       return hideShowFloatingWindow();
     });

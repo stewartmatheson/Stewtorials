@@ -8,14 +8,14 @@ hideShowFloatingWindow = ->
         floating_window.show()
 
 moveFloatingWindowToRight = ->
-    leftValue = $(window).width() - floating_window.width()
+    leftValue = $(window).width() - floating_window.width() - 10
     floating_window.css 'left', leftValue.toString() + "px"
 
 $ ->
     hideShowFloatingWindow()
     moveFloatingWindowToRight()
     $(window).scroll ->
-        top = $(@).scrollTop() + 20
+        top = $(@).scrollTop()
         floating_window.css 'top', top.toString() + 'px'
         hideShowFloatingWindow()
         

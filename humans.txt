@@ -3,18 +3,15 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site: 
-  Twitter: 
-  Location: 
-
-/* THANKS */
-  Names (& URL): 
+  Creator: Stewart Matheson
+  Site: stewtorials.rtmatheson.com
+  Twitter: @stewartmatheson
+  Location: Melbourne, Australia
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
+  Components: Modernizr, jQuery, Disqus
+  Software: PHP, Coffeescript, Javascript, HTML, Ubuntu, Vim, Gedit, Firefox, Chrome
   
 
                                     
