@@ -67,7 +67,18 @@ in the same way you would expect them to behave in a language like PHP. With one
 
 <?php render_code_block('javascript','comments.js', 'Comments in javascript.'); ?>
 
-<h3>Exercies</h3>
+<h3>Exercise: Download and Install Chrome</h3>
+<div class="exercise">
+    <ol>
+        <li>Download google chrome web browser</li>
+        <li>Right click on any web page and click "Inspect element". A window shoud open up accross the bottom of the browser.</li>
+        <li>In the newly opened window click the "Console" button. Note: this should work on any page including your own.</li>
+        <li>Click your cursor next tot he blue grater than sign.</li>
+        <li>Type "alert("Hello World!");" and press enter</li>
+        
+        <p>Once you hit enter then there should be a alert box pop-up. This is because we are running javascript in real time. Any javascript statement can be typed in to this box and executed in this way. Its very handy for debugging and a great way to learn about javascirpt.<p/>
+    </ol>
+</div>
 
 <?php include '../../disqus.php'; ?>
 <?php include '../../footer.php'; ?>

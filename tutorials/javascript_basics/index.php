@@ -18,6 +18,16 @@
 
 <?php render_code_block('javascript', "confirm.js", "Confirmations in javascript"); ?>
 
+<h3>Exercise: Confirm an Alert</h3>
+<div class="exercise">
+    <ol>
+        <li>Create a new HTML file</li>
+        <li>Create a script Tag in that new file</li>
+        <li>Create a confirm popup</li>
+        <li>Create an alert popup that displays if the user confirms the confirm popup.</li>
+        <p>When writing javascript remember that the scripts are being run by the browser. This means that we dont need any server technoligy installed/working to run our javascript. This means you are able to access any of your pages via the file:// protocol.</p>
+    <ol>
+</div>
 
 <p><strong>Settimeout:</strong> to save time our function facilitates the execution of code after a specific time. This time is set in milliseconds. After the amount of milliseconds has expired code will function that is passed as the first parameter is executed. This allows us to perform tired events on a webpage. A good use of the set timeout function would be clock functionality or even animating part of the page.</p>
 
@@ -29,11 +39,31 @@
 
 <?php render_code_block('javascript', "set_interval.js", "Set interval in javascript"); ?>
 
+<h3>Exercise: Create a Timer</h3>
+<div class="exercise">
+    <ol>
+        <li>Create a new HTML file</li>
+        <li>Create a script Tag in that new file</li>
+        <li>Create a script that outputs to the console each second since the page has loaded. Each time the script outputs to the console you should print out the amount of seconds... EG: 1.. 2.. 3 </li>
+    </ol>
+</div>
+
 <h3>User Functions</h3>
 
 <p>Functions represent what is arguably one of JavaScript’s most powerful features. Function-based programming is commonplace with JavaScript developers. Because JavaScript is a very flexible and dynamic language functions can be used in a number of ways. Functions can be declared in a classical way similar to languages such as C and PHP.</p>
 
 <?php render_code_block('javascript', "classical_functions.js", "A classical function in javascript"); ?>
+
+<h3>Exercise: Create a Function</h3>
+<div class="exercise">
+    <ol>
+        <li>Create a new HTML file</li>
+        <li>Create a script Tag in that new file</li>
+        <li>Write a function that accepts two paramaters</li>
+        <li>Within the body of the function add the two paramaters and then return the result.</li>
+        <li>Write code that will call the function on different numbers.</li>
+    </ol>
+</div>
 
 <p>Functions can also be declared as first level variables. This allows us to define a function and then assign it to a variable. This functionality is in contrast to languages such as PHP and C. A function to put it like this creates a new variable. This variable as type of function. In the first exercise this type was not mentioned.</p>
 
@@ -45,11 +75,23 @@
 
 <p>Having first-class functions is a massive advantage. We can have an array of options that we need to execute, or we can pass functions to other functions. Being able to work with functions in this way allows us to create very descriptive code that is both easy to write and easy to maintain. Creating functions in this way also allows us to asssign functions to object properties simulating the behaviour of an object in classically object orientated languages such as Java and C++.</p>
 
-
 <h3>Objects</h3>
 <p>As mentioned in a previous section JavaScript is a prototypical language that does not support classes. JavaScript does however have objects. Objects in JavaScript are very flexible and provide an excellent way of working with JavaScript code. Objects can be thought of a map of data and functions in much the same way a class is though of. An object exists in JavaScript is a single variable. An object can then be assigned various properties which include both data and functions.</p>
 
 <?php render_code_block('javascript', "objects_and_proprties.js", "Objects and Properties"); ?>
+
+<h3>Exercise: Create an Object</h3>
+<div class="exercise">
+    <ol>
+        <li>Create a new HTML file</li>
+        <li>Create a script Tag in that new file</li>
+        <li>Create an object for a player in a video game. The object should have properties for health, armor, wepon and ammo.</li>
+        <p>Note that the health, armor and ammo values are just numbers between 1 and 100. The weapon value can just be a string with the name of the weapon. EG: "Shotgun" or "Knife".</p>
+        <li>Create two more player objects with different weapon and armor values</li>
+        <li>Access these values with the dot notation and print them out to the console.</li>
+
+    </ol>
+</div>
 
 <p>As JavaScript is a weekly typed language we can set our object properties to be anything kind of variable we like. This includes functions.</p>
 
@@ -73,11 +115,32 @@ Objects can also be sent over the network using JavaScript object notation. JSON
 
 <?php render_code_block('javascript', "if_else.js", "If's in Javascript"); ?>
 
+<h3>Exercise: If's</h3>
+<div class="exercise">
+    <ol>
+        <li>Create a new HTML file</li>
+        <li>Create a script Tag in that new file</li>
+        <li>Create a function that works out the shipping cost of DVD's.</li>
+        <p>Your function should accpet the amount of DVD ordered. Less than 10 DVD's should attract a shipping cost of $5.00. Between 10 and 20 DVD's should cost $7.50 and over 20 DVD's should cost $10 to ship.</p>
+    </ol>
+</div>
+
 <p>JavaScript also supports for loops. For loops in JavaScript are set up in the same way they are in C style languages. As is the case with other languages when constructing for loop we must first know how many times we intend to loop. To use this amount to set up the guard condition of the loop.</p>
 
 <?php render_code_block('javascript', "for_loops.js", "For's in Javascript"); ?>
 
 <p>JavaScript also supports while loops. A while loop as a single guard condition. While this guard condition is said to true a while continue. The loop will continue until the guard condition is set to false. Make sure you are chanigng the guard condition when looping as you can get stuck in loop.</p>
+
+<h3>Exercise: Loops</h3>
+<div class="exercise">
+    <ol>
+        <li>Create a new HTML file</li>
+        <li>Create a script Tag in that new file</li>
+        <li>Copy the objects you created in <a href="#Exercise: Create an Object"> the objects exercise</a> to the new file you have just created.</li>
+        <li>Create a new array and add these objects too that array</li>
+        <li>Write a for loop that outputs the health and ammo of each object.</li>
+    </ol>
+</div>
 
 <?php render_code_block('javascript', "while.js", "While loop"); ?>
 
@@ -97,12 +160,6 @@ Objects can also be sent over the network using JavaScript object notation. JSON
 <p>When we are writing code outside any kind of function we are writing code in the global scope. Writing code in the global scope is potentially dangerous. As JavaScript is totally dynamic it is possible to reassign variables that have already been created. It’s also possible to reassign built-in variables. At any time we can redefine built-in variables in JavaScript. We can delete the built-in array and replace it with a one implementation. The reason this feature was built into JavaScript is most likely to to JavaScript is short development time. The language was created in a matter of weeks. The language designer anticipated problems when the language was launched. Therefore the decision was made to make every part of JavaScript dynamic. This would allow users to fix any problems in the language after the language was released. While this decision facilitated JavaScript framework and library developers are made JavaScript development potentially dangerous. Whenever we are working in the global scope we must consider what variables we are creating if we create a variable with the same name as a built-in variable there will be no error report by JavaScript. It will allow this code to run and “clobber” the existing variable.</p>
 
 <?php render_code_block('javascript', "scope_clobber.js", "Scope clobbering"); ?>
-
-<<Execise: Call built in functions>>
-<<Execise: Define a user function>>
-<<Execise: Create an object and call it>>
-<<Execise: Create an array and loop it>>
-<<Execise: Set up an if statement>>
 
 <?php include '../../disqus.php'; ?>
 <?php include "../../footer.php"; ?>
