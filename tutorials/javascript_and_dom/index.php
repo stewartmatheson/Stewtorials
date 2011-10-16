@@ -31,8 +31,16 @@
 <?php render_code_block('html', "include_jquery.html", "Including jQuery in a page."); ?>
 
 <h3>jQuery Object</h3>
+<p>Perfroming </p>
+
+
+
 <h3>Document Ready</h3>
-<h3>Selectors</h3>
+
+<h3>jQuery Selectors</h3>
+<?php render_code_block('html', "example_selectors.html", "An example HTML page"); ?>
+<?php render_code_block('js', "example_selectors.js", "Javascript selectors"); ?>
+
 <h3>Events</h3>
 <h3>Manipulation</h3>
 <h3>Manipulation: CSS</h3>

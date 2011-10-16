@@ -16,4 +16,10 @@
     </li>
 </ul>
 
+<h3>MySQL</h3>
+<ul class="toc">
+    <li>
+        <a href="tutorials/mysql">Data and Dataer</a> Getting started with MySQL.
+    </li>
+</ul>
 <?php include 'footer.php'; ?>
