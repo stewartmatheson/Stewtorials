@@ -2,7 +2,6 @@
 
 <h1>Javascript and the DOM</h1>
 
-
 <h3>Document Object Model</h3>
 <p>Javascript's most common use is interacting with the document object model. The "DOM" is a tree structure that is built from HTML elements on a given web page. Each element is one branch on the tree. Branches on this tree can have other branches. Much is the same way files and folders work. These relationships are called child-parent relationships. A given element can have one parent and can also have many children. The HTML element is the only element in a given page that does not have a parent. It is the top most element and as such is referred to as the root of the tree.</p>
 
@@ -57,6 +56,11 @@
     <ol>
 </div>
 
+<h3>Document Ready</h3>
+<p>One of the most common tasks performed in jQuery is initialisation. This is an event that happens when the document is loaded in the browser. Any code that sets up other events such as mouse clicks and keyboard events should by run when the document is ready. Fortunately jQuery provides us with a way of binding events to document ready. Through out these tutorials you will need to always set up your jQuery code to run in on document ready otherwise it will not work</p>
+
+<?php render_code_block('js', "document_ready.js", "Binding events with document ready."); ?>
+
 <h3>The jQuery Object</h3>
 <p>Performing actions on the dom using jQuery is done via the jQuery object. The jQuery object is a javascript object with all of the functions contained with in jQuery. This global can be referenced in two different ways. Either by the work "jQuery" or by the "$" sign. The "$" sign is more common and makes for less code however its up to the writer as to what they want to use as both work.</p>
 
@@ -80,28 +84,22 @@
 	<ol>
 </div>
 
-
 <p>A final note on manipulation: jQuery is a big framework. Its work taking time out to read though the <a href="http://api.jquery.com">API</a>. Even if you don't read every part of it its still great to have an overview of how the framework functions and what it can offer.</p>
 
 <h3>Events</h3>
 <p>Unlike PHP and HTML javascript programming can be state based. The DOM represents a single state and can be changed at any given time. We can also save data in different parts of the DOM. This turns the tables and allows us to build web applications that are more like desktop applications. Events in jQuery normally accept a function as part of their parameters. This function is a closure and will be executed when jQuery is ready to call the event. This provides us with a way of hooking in to events and running code we want. It's a great way to program as we can bind as many functions to an event as we need. Thus allowing us to create a set of functions that all perform actions for a feature of our program. This practice is known as <a href="http://en.wikipedia.org/wiki/Aspect-oriented_programming">aspect orientated programming</a>.</p>
 
-
 <?php render_code_block('js', "jquery_events.js", "Some basic events in jQuery."); ?>
 
-<h3>Document Ready</h3>
-<p>One of the most common tasks performed in jQuery is initialisation. This is an event that happens when the document is loaded in the browser. Any code that sets up other events such as mouse clicks and keyboard events should by run when the document is ready. Fortunately jQuery provides us with a way of binding events to document ready.</p>
-
-<?php render_code_block('js', "document_ready.js", "Binding events with document ready."); ?>
-
-<h3>Manipulation</h3>
-<h3>Manipulation: CSS</h3>
-<h3>Manipulation: Attributes</h3>
-<h3>Manipulation: Prepend, Append, Add, Remove</h3>
 <h3>Effects</h3>
-<h3>Ajax</h3>
+<p>The jQuery framework can be used to add effects to a page. This allows to to perform complex operations on elements like animation. As javascript in web browsers speeds up with google chrome the possibilities of interactivity with in web pages increases.</p>
 
+<p>jQuery makes these effects methods available via functions that can be applied to selectors. We have already used slideIn and slideOut so lets have a look at some other effects.</p>
+
+
+<?php render_code_block('js', "jQuery_effects.js", "Other jQuery effects."); ?>
+
+<p>There is much more that can be done with javascript and jQuery. Make sure to keep reading W3Schools and the jQuery documentation to stay on top of changes. The jQuery library in particular moves very quickly.</p>
 
 <?php include "../../disqus.php"; ?>
 <?php include "../../footer.php"; ?>
-
