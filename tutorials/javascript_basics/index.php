@@ -23,8 +23,8 @@
     <ol>
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
-        <li>Create a confirm popup</li>
-        <li>Create an alert popup that displays if the user confirms the confirm popup.</li>
+        <li>Create a confirm pop-up</li>
+        <li>Create an alert pop-up that displays if the user confirms the confirm popup.</li>
         <p>When writing javascript remember that the scripts are being run by the browser. This means that we dont need any server technoligy installed/working to run our javascript. This means you are able to access any of your pages via the file:// protocol.</p>
     <ol>
 </div>
@@ -59,8 +59,8 @@
     <ol>
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
-        <li>Write a function that accepts two paramaters</li>
-        <li>Within the body of the function add the two paramaters and then return the result.</li>
+        <li>Write a function that accepts two parameters</li>
+        <li>Within the body of the function add the two parameters and then return the result.</li>
         <li>Write code that will call the function on different numbers.</li>
     </ol>
 </div>
@@ -101,7 +101,7 @@
 
 <?php render_code_block('javascript', "object_constructor.js", "Object constructor"); ?>
 
-Objects can also be sent over the network using JavaScript object notation. JSON encoding is now supported by many server side scripting languages including PHP. JSON can be constructed as a string with a server side scripting language such as PHP. It can then be interpreted by JavaScript as a runtime object and its properties can be accessed as such.
+Objects can also be sent over the network using Javascript object notation. JSON encoding is now supported by many server side scripting languages including PHP. JSON can be constructed as a string with a server side scripting language such as PHP. It can then be interpreted by JavaScript as a runtime object and its properties can be accessed as such.
 
 <h3>Arrays</h3>
 <p>Arrays in JavaScript work much the same way as a race in other languages. Arrays in JavaScript a zero indexed so the first element in the array is accessed with an index of zero.</p>
