@@ -61,36 +61,10 @@
 
 <?php render_code_block('js', "document_ready.js", "Binding events with document ready."); ?>
 
-<h3>Exercise: Document Ready</h3>
-<div class="exercise">
-	<ol>
-		<li>Create a new HTML file</li>
-		<li>Include jQuery from the Google API in your file</li>
-		<li>Create a script Tag in that new file</li>
-		<li>Write a jQuery function that writes a log message to the console when the document is ready.</li>
-		<li>Write a jQuery function that writes a log message to the console when the document is loaded.</li>
-		<p>To do this you will need to look up the jQuery api. There are two different methods for document ready and document loaded. Find out their differnece and when best to use them.</p>
-	<ol>
-</div>
-
-
 <h3>The jQuery Object</h3>
 <p>Performing actions on the dom using jQuery is done via the jQuery object. The jQuery object is a javascript object with all of the functions contained with in jQuery. This global can be referenced in two different ways. Either by the work "jQuery" or by the "$" sign. The "$" sign is more common and makes for less code however its up to the writer as to what they want to use as both work.</p>
 
 <?php render_code_block('js', "jquery_object.js", "Using the javascript object"); ?>
-
-<h3>Exercise: jQuery Object</h3>
-<div class="exercise">
-	<ol>
-		<li>Create a new HTML file</li>
-		<li>Include jQuery from the Google API in your file</li>
-		<li>Create a script Tag in that new file</li>
-		<li>Create two div elements on your page and assign them 2 id's</li>
-		<li>Use the two different types of jQuery notation to select these divs</li>
-		<li>Select all divs on the page and loop them logging their html values to the console.</li>
-		<p>jQuery provides a loop method that allows use to loop though each object that has been selected by a given selector. This is the <a href="http://api.jquery.com/jQuery.each/">each function</a>. You can also use the <a href="http://api.jquery.com/html/">html function</a> to get what is in side a given element.</p>
-	<ol>
-</div>
 
 <p>When using jQuery there are two main steps. First is working out the correct selector for your needs and the second is performing operations on that selector. Operations in jQuery are all functions that are callable form the jQuery object. When we use the jQuery object and type a selector then any more operations we perform on that object will be applied to all of the elements selected. As we are dealing with a single jQuery object we can also use method chaining to apply multiple operations</p>
 
@@ -125,21 +99,7 @@
 
 <?php render_code_block('js', "jQuery_effects.js", "Other jQuery effects."); ?>
 
-<h3>Exercise: Effects</h3>
-<div class="exercise">
-	<ol>
-		<li>Create a new HTML file</li>
-		<li>Include jQuery from the Google API in your file</li>
-		<li>Create a script Tag in that new file</li>
-		<li>Create 2 div elemetns on the page and fill them with <a href="http://www.lipsum.com/">random text</a>.</li>
-		<li>Create two links, one for each div</li>
-		<li>One link should cause one div to fade in and out when clicked in a toggle style</li>
-		<li>The other link should cause the other div to slide up and down in a toggle style</li>
-		<p>To do this you will have to create an event handler that listens for the click event of each of your two links.</p>
-	<ol>
-</div>
-
-<p>There is much more that can be done with javascript and jQuery. Make sure to keep reading W3Schools and the jQuery documentation to stay on top of changes. The jQuery library in particular moves very quickly. If you have any suggestions please add them to the comments below.</p>
+<p>There is much more that can be done with javascript and jQuery. Make sure to keep reading W3Schools and the jQuery documentation to stay on top of changes. The jQuery library in particular moves very quickly.</p>
 
 <?php include "../../disqus.php"; ?>
 <?php include "../../footer.php"; ?>
