@@ -9,5 +9,3 @@ $('#greeting').html('Hello how are you today?');
 
 //Here we can get the content of an element.
 $('#greeting').html(); //Returns whats inside the element
-
-

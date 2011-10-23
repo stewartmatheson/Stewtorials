@@ -6,7 +6,7 @@
 <p>Prototype-based languages differ from classical object orientated languages. When writing JavaScript we do not create classes. We can simulate classes by using Java objects however there is no way to define a class in the classical way. New JavaScript programmers may find this inhibiting. Particularly those coming from a C++ and Java background. It also causes a lot of confusion as many developers approach the language with the mindset of classical object orientation. This is a mistake to be avoided as approaching JavaScript in this way will most likely result in buggy code and frustration.</p>
 
 
-<h3>Built in Functions</h3>
+<h3 class=add_to_toc>Built in Functions</h3>
 
 <p>We have already used the console.log function which is a built-in JavaScript function. JavaScript has other built-in functions. These include...</p>
 
@@ -18,8 +18,8 @@
 
 <?php render_code_block('javascript', "confirm.js", "Confirmations in javascript"); ?>
 
-<h3>Exercise: Confirm an Alert</h3>
-<div class="exercise">
+<h3 class=add_to_toc>Exercise: Confirm an Alert</h3>
+<div class=exercise>
     <ol>
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
@@ -39,8 +39,8 @@
 
 <?php render_code_block('javascript', "set_interval.js", "Set interval in javascript"); ?>
 
-<h3>Exercise: Create a Timer</h3>
-<div class="exercise">
+<h3 class=add_to_toc>Exercise: Create a Timer</h3>
+<div class=exercise>
     <ol>
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
@@ -48,14 +48,14 @@
     </ol>
 </div>
 
-<h3>User Functions</h3>
+<h3 class=add_to_toc>User Functions</h3>
 
 <p>Functions represent what is arguably one of JavaScript’s most powerful features. Function-based programming is commonplace with JavaScript developers. Because JavaScript is a very flexible and dynamic language functions can be used in a number of ways. Functions can be declared in a classical way similar to languages such as C and PHP.</p>
 
 <?php render_code_block('javascript', "classical_functions.js", "A classical function in javascript"); ?>
 
-<h3>Exercise: Create a Function</h3>
-<div class="exercise">
+<h3 class=add_to_toc>Exercise: Create a Function</h3>
+<div class=exercise>
     <ol>
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
@@ -75,13 +75,13 @@
 
 <p>Having first-class functions is a massive advantage. We can have an array of options that we need to execute, or we can pass functions to other functions. Being able to work with functions in this way allows us to create very descriptive code that is both easy to write and easy to maintain. Creating functions in this way also allows us to asssign functions to object properties simulating the behaviour of an object in classically object orientated languages such as Java and C++.</p>
 
-<h3>Objects</h3>
+<h3 class=add_to_toc>Objects</h3>
 <p>As mentioned in a previous section JavaScript is a prototypical language that does not support classes. JavaScript does however have objects. Objects in JavaScript are very flexible and provide an excellent way of working with JavaScript code. Objects can be thought of a map of data and functions in much the same way a class is though of. An object exists in JavaScript is a single variable. An object can then be assigned various properties which include both data and functions.</p>
 
 <?php render_code_block('javascript', "objects_and_proprties.js", "Objects and Properties"); ?>
 
-<h3>Exercise: Create an Object</h3>
-<div class="exercise">
+<h3 class=add_to_toc>Exercise: Create an Object</h3>
+<div class=exercise>
     <ol>
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
@@ -103,7 +103,7 @@
 
 Objects can also be sent over the network using Javascript object notation. JSON encoding is now supported by many server side scripting languages including PHP. JSON can be constructed as a string with a server side scripting language such as PHP. It can then be interpreted by JavaScript as a runtime object and its properties can be accessed as such.
 
-<h3>Arrays</h3>
+<h3 class=add_to_toc>Arrays</h3>
 <p>Arrays in JavaScript work much the same way as a race in other languages. Arrays in JavaScript a zero indexed so the first element in the array is accessed with an index of zero.</p>
 
 <?php render_code_block('javascript', "creating_arrays.js", "Creating Arrays"); ?>
@@ -115,8 +115,8 @@ Objects can also be sent over the network using Javascript object notation. JSON
 
 <?php render_code_block('javascript', "if_else.js", "If's in Javascript"); ?>
 
-<h3>Exercise: If's</h3>
-<div class="exercise">
+<h3 class=add_to_toc>Exercise: If's</h3>
+<div class=exercise>
     <ol>
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
@@ -131,8 +131,8 @@ Objects can also be sent over the network using Javascript object notation. JSON
 
 <p>JavaScript also supports while loops. A while loop as a single guard condition. While this guard condition is said to true a while continue. The loop will continue until the guard condition is set to false. Make sure you are chanigng the guard condition when looping as you can get stuck in loop.</p>
 
-<h3>Exercise: Loops</h3>
-<div class="exercise">
+<h3 class=add_to_toc>Exercise: Loops</h3>
+<div class=exercise>
     <ol>
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
@@ -148,7 +148,7 @@ Objects can also be sent over the network using Javascript object notation. JSON
 
 <?php render_code_block('javascript', "for_in.js", "For in loop"); ?>
 
-<h3>Scope</h3>
+<h3 class=add_to_toc>Scope</h3>
 <p>A common issue that is reported by new JavaScript developers is that of scope. Scope refers to the lexical context of a program at a particular point of its run-time. As JavaScript is not a class-based language scope behaviour is different and it must properly understood will cause frustration. Again, much of this frustration will be felt by users of C++ and Java as they are classically object orientated languages.</p>
 
 <p>Scope essentially boils down to what data you can access at what time. For example data in one function cannot be accessed from a different function.</p>

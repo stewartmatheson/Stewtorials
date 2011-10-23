@@ -1,7 +1,7 @@
 floating_window = $('#back_to_top')
 
 hideShowFloatingWindow = ->
-    scrollTop = $(@).scrollTop()    
+    scrollTop = $(@).scrollTop()
     if scrollTop < 100
         floating_window.hide()
     else
@@ -23,10 +23,11 @@ $ ->
         moveFloatingWindowToRight()
         
 
-    main = $('#main')
-    main.prepend '<div><h5>Table of Contents</h5><ol id="page_toc"></ol></div>';
-    toc_list = $('#page_toc')
-    $('h3').each (index, value) ->
-        link_title = $(value).html();
-        toc_list.append "<li><a href=\"##{link_title}\">#{link_title}</a></li>"
-        $(value).before("<a name=\"#{link_title}\"></a>")
+    if $('.add_to_toc').length > 0
+        main = $('#main')
+        main.prepend '<div><h5>Table of Contents</h5><ol id="page_toc"></ol></div>'
+        toc_list = $('#page_toc')
+        $('.add_to_toc').each (index, value) ->
+            link_title = $(value).html()
+            toc_list.append "<li><a href=\"##{link_title}\">#{link_title}</a></li>"
+            $(value).before("<a name=\"#{link_title}\"></a>")

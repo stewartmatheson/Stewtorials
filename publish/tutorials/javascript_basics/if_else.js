@@ -15,4 +15,4 @@ if(currentAction === "Running")
 else if(currentAction === "Walking")
     playerWalk();
 else
-    playerStanding(); 
+    playerStanding();
