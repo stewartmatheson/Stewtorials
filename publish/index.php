@@ -1,6 +1,8 @@
 <?php include 'header.php'; ?>
 
-<p>Welcome to Stewtorials. This resource was cerated to cator for beginners looking to study web development for the first time.  It is intended as a biginner guide and should be treated as such. Any suggestions and ideas you have for future Stewtorials are welcome via <a href="http://rtmatheson.com">my blog</a>.</p>
+<p>Welcome to Stewtorials. This resource was cerated to assist beginners looking to study web development for the first time.  It is intended as a beginner guide and should be treated as such. Any suggestions and ideas you have for future Stewtorials are welcome via <a href="http://rtmatheson.com">my blog</a>.</p>
+
+
 
 <h3>Javascript</h3>
 <ul class=toc>

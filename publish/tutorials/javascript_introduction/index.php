@@ -8,17 +8,17 @@
 <div class=exercise>
     <ol>
         <li>Download google chrome web browser</li>
-        <li>Right click on any web page and click "Inspect element". A window shoud open up accross the bottom of the browser.</li>
+        <li>Right click on any web page and click "Inspect element". A window should open up across the bottom of the browser.</li>
         <li>In the newly opened window click the "Console" button. Note: this should work on any page including your own.</li>
         <li>Click your cursor next tot he blue grater than sign.</li>
         <li>Type "alert("Hello World!");" and press enter</li>
         
-        <p>Once you hit enter then there should be a alert box pop-up. This is because we are running javascript in real time. Any javascript statement can be typed in to this box and executed in this way. Its very handy for debugging and a great way to learn about javascirpt.<p/>
+        <p>Once you hit enter then there should be a alert box pop-up. This is because we are running javascript in real time. Any javascript statement can be typed in to this box and executed in this way. Its very handy for debugging and a great way to learn about javascript.<p/>
     </ol>
 </div>
 
 <h3 class=add_to_toc>History of Javascript</h3>
-<p>Javascript was developed during the mid 90’s for Netscape. Originally called Mocha and then livescript it was developed to allow web developers to script on the web.  Around the time of JavaScript’s  development java applets where popular and the preferred way of adding interactivity to web pages. Javascript was seen as java’s poor cousin and treated as such by many developers at the time. As applets declined in popularity javascript became more prominent. As ajax was developed allowing pages to make asynconus requests to servers JavaScript underwent a renascence.  Ajax popularised javascript and forced many developers to take the language seriously.  Many more developers use javascript than ever before and the language is taken more seriously in development communities.  Javascript now days forms a fundamental part of the Internet and there are many libraries and frameworks available. Javascript also has implementations that run on servers such as rinho and node.js which is based on the google V8 javascript engine.</p>
+<p>Javascript was developed during the mid 90’s for Netscape. Originally called Mocha and then live script it was developed to allow web developers to script on the web.  Around the time of JavaScript’s  development Java applets where popular and the preferred way of adding interactivity to web pages. Javascript was seen as Java’s poor cousin and treated as such by many developers at the time. As applets declined in popularity javascript became more prominent. As ajax was developed allowing pages to make asynchronous requests to servers JavaScript underwent a renascence.  Ajax popularised javascript and forced many developers to take the language seriously.  Many more developers use javascript than ever before and the language is taken more seriously in development communities.  Javascript now days forms a fundamental part of the Internet and there are many libraries and frameworks available. Javascript also has implementations that run on servers such as Rhino and node.js which is based on the google V8 javascript engine.</p>
 
 <h3 class=add_to_toc>Use</h3>
 <p>Javascript has many different uses as a programming language. It’s primary use is scripting for web pages. Javascript can be used to change a web page by...</p>
@@ -38,7 +38,7 @@
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
         <li>Create an alert box using the code: "alert('Hello World!');"</li>
-		<p>Note that you should not include the quotes in your code. It's also worth noting that you dont have to place your file in a server anywhere. The code is run though the browser.</p>
+		<p>Note that you should not include the quotes in your code. It's also worth noting that you don't have to place your file in a server anywhere. The code is run though the browser.</p>
     <ol>
 </div>
 
@@ -53,7 +53,7 @@
 <p>Some browsers include a javascript console with the browser. This allows developers to write javascript on their page line by line. Consoles like this are a powerful tool when trying to debug scripts. One such browser that offers a javascript console is google chrome. Google chrome offers a toolkit allowing javascript developers to write small sections of javascript code and have them instantly run on the loaded page. Chrome also allows users to place break points on our scripts and view what variables when these breakpoints are hit. Much the same way as Microsoft's Visual Studio handles break points.</p>
 
 <h3 class=add_to_toc>Console Logging</h3>
-<p>Logging is a great tool for debugging javascript. Both firefox and google chrome support console.log.</p>
+<p>Logging is a great tool for debugging javascript. Both Firefox and google chrome support console.log.</p>
 <?php render_code_block('javascript','console_log.js', 'Debugging variables at runtime.'); ?>
 
 
@@ -83,7 +83,7 @@
     <ol>
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
-        <li>In that script tag create a string called "steve" and set its value to any string</li>
+        <li>In that script tag create a string called "Steve" and set its value to any string</li>
         <li>Create a variable called "Pi" and set it to pi.</li>
         <li>Use the plus sign operator to add Steve to Pi and note what happens</li>
 		<p>Note how the number gets converted as a string. Thats because + adds numbers as well as concatenates strings. This can be confusing to have the same operator on a dynamically typed language so make sure you always have the right types when dealing with the + operator.</p>
@@ -101,7 +101,7 @@
 <p>Strings. Javascript has a string type. Strings behave in the same way they do in other languages. Strings can use single or double quotes.</p>
 <?php render_code_block('javascript','type_string.js', 'Strings in javascript'); ?>
 
-<p>Boolans. Booleans are values that can be set to true or false</p>
+<p>Booleans. Booleans are values that can be set to true or false</p>
 <?php render_code_block('javascript','type_boolean.js', 'Booleans in javascript'); ?>
 
 <p>Arrays. Arrays are zero indexed in JavaScript. Arrays can be created using [] notation. Never used the new keyword to create a new array in JavaScript. There are several handy methods built in to the JavaScript array prototype.</p>

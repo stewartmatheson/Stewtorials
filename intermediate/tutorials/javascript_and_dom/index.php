@@ -16,7 +16,7 @@
         <li>Download and Open Google Chrome</li>
         <li>Rick click on this page and click "inspect element"</li>
         <li>Explore the DOM of this page and try to find the elements controlling this list.</li>
-	<p>Make sure to note who is the parent and who is the child of each element or set of elements. When It comes to writing Javascript there will be times that you will be required to traverse the dom.
+	<p>Make sure to note who is the parent and who is the child of each element or set of elements. When It comes to writing Javascript there will be times that you will be required to traverse the DOM.
     <ol>
 </div>
 
@@ -46,7 +46,6 @@
         <li>Include jQuery from the Google API in your file</li>
         <li>Create a script Tag in that new file</li>
         <li>Copy the body of the html example "An example HTML page" and make it load in your page. </li>
-
         <li>Write a jQuery object that has a selector that will select each div element.</li>
         <li>Write a jQuery object that has a selector that will select each element with the class "layout".</li>
         <li>Write a jQuery object that has a selector that will select the element with id "main-content".</li>
@@ -69,13 +68,13 @@
 		<li>Create a script Tag in that new file</li>
 		<li>Write a jQuery function that writes a log message to the console when the document is ready.</li>
 		<li>Write a jQuery function that writes a log message to the console when the document is loaded.</li>
-		<p>To do this you will need to look up the jQuery api. There are two different methods for document ready and document loaded. Find out their differnece and when best to use them.</p>
+		<p>To do this you will need to look up the jQuery API. There are two different methods for document ready and document loaded. Find out their difference and when best to use them.</p>
 	<ol>
 </div>
 
 
 <h3 class="add_to_toc">The jQuery Object</h3>
-<p>Performing actions on the dom using jQuery is done via the jQuery object. The jQuery object is a javascript object with all of the functions contained with in jQuery. This global can be referenced in two different ways. Either by the work "jQuery" or by the "$" sign. The "$" sign is more common and makes for less code however its up to the writer as to what they want to use as both work.</p>
+<p>Performing actions on the DOM using jQuery is done via the jQuery object. The jQuery object is a javascript object with all of the functions contained with in jQuery. This global can be referenced in two different ways. Either by the work "jQuery" or by the "$" sign. The "$" sign is more common and makes for less code however its up to the writer as to what they want to use as both work.</p>
 
 <?php render_code_block('js', "jquery_object.js", "Using the javascript object"); ?>
 
@@ -131,7 +130,7 @@
 		<li>Create a new HTML file</li>
 		<li>Include jQuery from the Google API in your file</li>
 		<li>Create a script Tag in that new file</li>
-		<li>Create 2 div elemetns on the page and fill them with <a href="http://www.lipsum.com/">random text</a>.</li>
+		<li>Create 2 div elements on the page and fill them with <a href="http://www.lipsum.com/">random text</a>.</li>
 		<li>Create two links, one for each div</li>
 		<li>One link should cause one div to fade in and out when clicked in a toggle style</li>
 		<li>The other link should cause the other div to slide up and down in a toggle style</li>

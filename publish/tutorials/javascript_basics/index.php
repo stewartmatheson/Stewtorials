@@ -24,12 +24,12 @@
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
         <li>Create a confirm pop-up</li>
-        <li>Create an alert pop-up that displays if the user confirms the confirm popup.</li>
-        <p>When writing javascript remember that the scripts are being run by the browser. This means that we dont need any server technoligy installed/working to run our javascript. This means you are able to access any of your pages via the file:// protocol.</p>
+        <li>Create an alert pop-up that displays if the user confirms the confirm pop-up.</li>
+        <p>When writing javascript remember that the scripts are being run by the browser. This means that we don't need any server technology installed/working to run our javascript. This means you are able to access any of your pages via the file:// protocol.</p>
     <ol>
 </div>
 
-<p><strong>Settimeout:</strong> to save time our function facilitates the execution of code after a specific time. This time is set in milliseconds. After the amount of milliseconds has expired code will function that is passed as the first parameter is executed. This allows us to perform tired events on a webpage. A good use of the set timeout function would be clock functionality or even animating part of the page.</p>
+<p><strong>Settimeout:</strong> to save time our function facilitates the execution of code after a specific time. This time is set in milliseconds. After the amount of milliseconds has expired code will function that is passed as the first parameter is executed. This allows us to perform tired events on a web page. A good use of the set timeout function would be clock functionality or even animating part of the page.</p>
 
 
 <?php render_code_block('javascript', "set_timeout.js", "Set timeout in javascript"); ?>
@@ -69,11 +69,11 @@
 
 <?php render_code_block('javascript', "first_level_functions.js", "A first level function in javascript"); ?>
 
-<p>Functions that are defined in this way are known as anonymous functions. Anonymous functions are used extensively in JavaScript libraries and frameworks. Anonymous functions make it very easy to define programming interfaces. We can even write our own for each loop using an anonymous function. In the example below we define a function that loops through an array. The function accepts a function as its first parameter. Each time the array loops the function that is passed in is executed. Other languages such as PHP and Java perform very similar operations internally. JavaScript itself doesn’t have a for each loop, this is because they are so easy to write given the language constructs.</p>
+<p>Functions that are defined in this way are known as anonymous functions. Anonymous functions are used extensively in JavaScript libraries and frameworks. Anonymous functions make it very easy to define programming interfaces. We can even write our own for each loop using an anonymous function. In the example below we define a function that loops through an array. The function accepts a function as its first parameter. Each time the array loops the function that is passed in is executed. Other languages such as PHP and Java perform very similar operations internally. JavaScript itself does not have a for each loop, this is because they are so easy to write given the language constructs.</p>
 
 <?php render_code_block('javascript', "own_for_each.js", "A for each loop in javascript"); ?>
 
-<p>Having first-class functions is a massive advantage. We can have an array of options that we need to execute, or we can pass functions to other functions. Being able to work with functions in this way allows us to create very descriptive code that is both easy to write and easy to maintain. Creating functions in this way also allows us to asssign functions to object properties simulating the behaviour of an object in classically object orientated languages such as Java and C++.</p>
+<p>Having first-class functions is a massive advantage. We can have an array of options that we need to execute, or we can pass functions to other functions. Being able to work with functions in this way allows us to create very descriptive code that is both easy to write and easy to maintain. Creating functions in this way also allows us to assign functions to object properties simulating the behaviour of an object in classically object orientated languages such as Java and C++.</p>
 
 <h3 class=add_to_toc>Objects</h3>
 <p>As mentioned in a previous section JavaScript is a prototypical language that does not support classes. JavaScript does however have objects. Objects in JavaScript are very flexible and provide an excellent way of working with JavaScript code. Objects can be thought of a map of data and functions in much the same way a class is though of. An object exists in JavaScript is a single variable. An object can then be assigned various properties which include both data and functions.</p>
@@ -85,7 +85,7 @@
     <ol>
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
-        <li>Create an object for a player in a video game. The object should have properties for health, armor, wepon and ammo.</li>
+        <li>Create an object for a player in a video game. The object should have properties for health, armor, weapon and ammo.</li>
         <p>Note that the health, armor and ammo values are just numbers between 1 and 100. The weapon value can just be a string with the name of the weapon. EG: "Shotgun" or "Knife".</p>
         <li>Create two more player objects with different weapon and armor values</li>
         <li>Access these values with the dot notation and print them out to the console.</li>
@@ -121,7 +121,7 @@ Objects can also be sent over the network using Javascript object notation. JSON
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
         <li>Create a function that works out the shipping cost of DVD's.</li>
-        <p>Your function should accpet the amount of DVD ordered. Less than 10 DVD's should attract a shipping cost of $5.00. Between 10 and 20 DVD's should cost $7.50 and over 20 DVD's should cost $10 to ship.</p>
+        <p>Your function should accept the amount of DVD ordered. Less than 10 DVD's should attract a shipping cost of $5.00. Between 10 and 20 DVD's should cost $7.50 and over 20 DVD's should cost $10 to ship.</p>
     </ol>
 </div>
 
@@ -129,7 +129,7 @@ Objects can also be sent over the network using Javascript object notation. JSON
 
 <?php render_code_block('javascript', "for_loops.js", "For's in Javascript"); ?>
 
-<p>JavaScript also supports while loops. A while loop as a single guard condition. While this guard condition is said to true a while continue. The loop will continue until the guard condition is set to false. Make sure you are chanigng the guard condition when looping as you can get stuck in loop.</p>
+<p>JavaScript also supports while loops. A while loop as a single guard condition. While this guard condition is said to true a while continue. The loop will continue until the guard condition is set to false. Make sure you are changing the guard condition when looping as you can get stuck in loop.</p>
 
 <h3 class=add_to_toc>Exercise: Loops</h3>
 <div class=exercise>
