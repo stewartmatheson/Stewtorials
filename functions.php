@@ -3,6 +3,11 @@ include 'geshi/geshi.php';
 
 function get_file_code($type, $path){
     $g = new GeSHi('', $type);
+    
+    //$g->enable_line_numbers(GESHI_NORMAL_LINE_NUMBERS);
+    $g->set_tab_width(2);
+    $g->enable_keyword_links(false);
+    
     $g->load_from_file($path);
     return $g->parse_code();
 }
