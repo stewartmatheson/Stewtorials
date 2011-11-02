@@ -2,7 +2,7 @@
     <footer>
     Stewtorials &copy; <?php echo date('Y'); ?> <a href="http://rtmatheson.com">Stewart Matheson</a> 
     | <a href="https://github.com/stewartmatheson/Stewtorials">Source Code</a>
-    | This site has been created with the awesome <a href="http://html5boilerplate.com">HTML5 Boiler Plate</a>
+    | Created with the <a href="http://html5boilerplate.com">HTML5 Boiler Plate</a> | <a href="/changelog.php">Changes</a> 
     </footer>
   </div> 
 

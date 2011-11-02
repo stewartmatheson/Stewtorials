@@ -131,10 +131,9 @@ in the same way you would expect them to behave in a language like PHP. With one
         <li>Create a new HTML file</li>
         <li>Create a script Tag in that new file</li>
 		<li>Write an operation that evaluates (.1 + .2) to equal .3</li>
-        <p>"console.log((.1 + .2) == .3);"</p>
-		<li>Write the same operation with triple equals</li>
         <p>"console.log((.1 + .2) === .3);"</p>
 		<li>Note the results</li>
+        <p>Note this returns false! It should not. This is an issue with the numbering system Javascript uses. Javascript unlike other languages has only one type of number. This type is called number and is IEEE floating point. Having one number in the language is a great idea but they chose the wrong number type.</p>
     <ol>
 </div>
 
